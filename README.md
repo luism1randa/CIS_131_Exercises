@@ -4,4 +4,5 @@ Weekly Practice Exercises for CIS 131 Class
 
 ## Exercises
 Exercise 1: Loop Exercises
-   - Prints 5 different shapes using nested for loops and if, if else statements
+   - Prints 5 different shapes based on given instructions
+   - Uses: nested for loops, if statements, if else statements
