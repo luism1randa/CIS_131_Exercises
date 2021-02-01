@@ -9,3 +9,7 @@ Note: User often inputs data in the command line which is validated by IR4.java 
 Exercise 1: LoopExercises.java
    - Prints 5 different shapes based on given instructions
    - Uses: nested for loops, if statements, if else statements
+
+Exercise 2: TwoFunctionInputValidationModel.java
+ - Uses the two-input-validation model to validate user input
+ - User inputs time in the HHMM format

@@ -1,5 +1,5 @@
 /** 
- *  @author PUT YOUR NAME HERE! 
+ *  @author Luis Miranda
  *  @author This program demonstrates my understanding of the 2-function input validation model.
  *  @version 1.0  
  
