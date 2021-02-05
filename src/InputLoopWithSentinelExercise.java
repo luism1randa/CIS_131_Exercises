@@ -1,5 +1,5 @@
 /** 
- *  @author PUT YOUR NAME HERE! 
+ *  @author Luis Miranda
  *  @author This program demonstrates my understanding of a Sentinel loop and the 2-function input validation model.
  *  @version 1.0  
  * 
@@ -34,7 +34,15 @@ public class InputLoopWithSentinelExercise {
         //      Display "The day of the week is: " + DAYS[dayOfWeek]
         //      dayOfWeek = getValidDayOfWeek(QUESTION)
         //  End-While
-        
+
+        int dayOfWeek = getValidDayOfWeek(QUESTION);
+        int SENTINEL = 0;
+
+        while (dayOfWeek != SENTINEL){
+            System.out.println("The day of the week is: " + DAYS[dayOfWeek]);
+            dayOfWeek = getValidDayOfWeek(QUESTION);
+        }
+
         System.out.println("\n--- Program Complete ---"); 
     }
     
@@ -58,11 +66,18 @@ public class InputLoopWithSentinelExercise {
         //      Input day 
         //  End-While 
 
-        
+        String ERROR_MSG = "Invalid day of week";
+
+        while (isInvalidDayOfWeek(day) == INVALID_VALUE){
+            System.out.println(ERROR_MSG);
+            day = IR4.getString(msg);
+        }
+
+        int index = isInvalidDayOfWeek(day);
         
         //Sub-problem: What are you trying to return to the calling statement? What are the values? 
         //             Do you already have that information? If not, can you get that information easily? (yes, you can!)
-        return 0; //change what is being returned to the numeric value representing the day of the week or quit (0-7)! 
+        return index; //change what is being returned to the numeric value representing the day of the week or quit (0-7)!
     }
     
     /** Validates the day entered by the user is valid (or q for quit). 
@@ -76,8 +91,13 @@ public class InputLoopWithSentinelExercise {
         //  All the user to enter values such as "M", "m", "MoN", "MonDA", etc. Even "MMMMMM" should work! 
         //  Compare the user input day with the values of the D_ABBREVIATIONS array.
         //subproblem: how to compare a string with an array of strings? Hint: Perhaps you need to loop through the array? 
-        
-        
+
+        for (int index = 0; index < D_ABBREVIATIONS.length; index++) {
+            if (day.toLowerCase().startsWith(D_ABBREVIATIONS[index]) ){
+                return index;
+            }
+        }
+
         //return an int representing the day of the week or the invalid value flag
         return INVALID_VALUE; //invalid day of week 
     }   
