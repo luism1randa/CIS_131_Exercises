@@ -17,3 +17,7 @@ Exercise 2: TwoFunctionInputValidationModel.java
 Exercise 3: InputLoopWithSentinelExercise.java
  - Prompts user for a day of the week and returns input
  - Uses: input validation with sentinel loops
+ 
+Exercise 4: FormatExercise.java
+ - Prints receipts of various items
+ - Uses: printf
