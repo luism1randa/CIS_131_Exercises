@@ -19,5 +19,17 @@ Exercise 3: InputLoopWithSentinelExercise.java
  - Uses: input validation with sentinel loops
  
 Exercise 4: FormatExercise.java
- - Prints receipts of various items
+ - Prints receipt of various items
  - Uses: printf
+
+Exercise 5: Multiplication.java
+ - Prints a multiplication table of 1x9
+ - Uses: printf, nested for loops, array
+
+Exercise 6: StringManipulations.java
+ - Manipulates strings
+ - Uses: String methods
+
+Exercise 7: Hotel Hideout.java
+ - Finds a criminal hiding in 1 of 60 possible hotel rooms
+ - Uses: 2D arrays
